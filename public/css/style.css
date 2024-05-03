@@ -1,0 +1,133 @@
+/* Reset básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff; 
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container a {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #007bff; 
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    width: 100%; 
+    transition: background-color 0.3s;
+    text-decoration: none; 
+}
+
+.container a:hover {
+    background-color: #0056b3; 
+    text-decoration: none; 
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    padding: 20px;
+    width: 100%;
+    max-width: 360px; 
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+h1, h2 {
+    color: #333;
+    margin-bottom: 40px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Tabela de usuários */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px; 
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+thead {
+    background-color: #f0f8ff;
+}
+
+th {
+    height: 50px; 
+}
+
+td {
+    height: 50px; 
+}
+
+/* Botões */
+button {
+    padding: 8px 16px;
+    background-color: #007bff; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3; 
+}
+
+.delete-user {
+    background-color: #dc3545; 
+}
+
+.delete-user:hover {
+    background-color: #c82333; 
+}
+
+#logout {
+    margin-top: 20px;
+}
+
+/* Estilização dos inputs */
+input[type="email"], input[type="password"], input[type="text"], input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    table, th, td {
+        font-size: 14px; 
+    }
+}
